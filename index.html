@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link id="link" rel="icon" type="image/x-icon" href="timerPNG.png" />
+     <link rel="stylesheet" href="style.css" /> 
+  </head>
+  <body>
+    <div class="container">
+      <div class="time">
+        <div class="min"> <p id="para">00</p> </div>
+        <p> : </p>
+        <div class="sec"> <p id="para">00</p></div>
+        <p> : </p>
+        <div class="msec"> <p id="para">000</p></div>
+      </div>
+      <div class="function">
+        <button  onclick="start()">start</a>
+        <button onclick="stopResume()" id="swap">stop</button>
+        <button onclick="reset()">reset</button>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

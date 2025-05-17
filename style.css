@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#link{
+    border-radius:5px ;
+    mix-blend-mode: color-burn;
+}
+
+html,body{
+    height:100vh;
+    width:100vw;
+}
+
+.container{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display:flex;
+    flex-direction: column;  
+    width: 100%;
+    height: 100%;
+    font-family: "Boldonse", system-ui;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    gap: 1rem;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin:0px 0px 0px 7rem;
+
+}
+@keyframes pop{
+    0%{
+        opacity: 0;
+        transform:translateX(-500%);
+        
+    }
+    100%{
+        opacity:100;
+        transform: translateX(0);
+        
+    }
+
+}   
+@keyframes pop1{
+    0%{
+        opacity: 0;
+        transform:translateY(-100%); 
+    }
+    100%{
+        opacity:100;
+        transform: translateY(0);
+    }
+
+}   
+@keyframes pop2{
+    0%{
+        opacity: 0;
+        transform:translatex(-100%);
+    }
+    100%{
+        opacity:100;
+        transform: translateX(0);
+    }
+
+}   
+.function{
+    margin: 5rem 0px 0px 0px;
+    display: flex;
+    gap: 0px 10rem;
+}
+
+.function button{
+    background-color: #8EC5FC;
+    font-family: "Boldonse", system-ui;
+    font-weight: 10;
+    border: none;
+    padding: 10px 20px ;
+    border-radius: 5px;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: .3s linear 0s all;
+}
+
+button:hover   {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.min{
+    color: rgba(127, 255, 212, 0.697);
+    animation: pop 1.5s ease-in-out forwards;
+}
+.sec{
+    
+    animation: pop1 1.5s ease-in-out forwards;
+    color: rgba(127, 255, 212, 0.697);
+}
+.msec{
+    color: rgba(127, 255, 212, 0.697); 
+    width: 20rem;
+    animation: pop2 1.5s ease-in-out backwards    ;
+}
